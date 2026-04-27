@@ -1,4 +1,4 @@
-/* auth.js — password gate logic */
+/* auth.js - password gate logic */
 
 (function () {
   var PASSWORD = 'mccombsbestproductclass';
@@ -7,30 +7,24 @@
   var isAssignment = window.location.pathname.indexOf('/assignments/') !== -1;
 
   if (sessionStorage.getItem('auth') === 'granted') {
-    /* Already authenticated */
     if (!isAssignment) showPortfolio();
     return;
   }
 
   if (isAssignment) {
-    /* Redirect to root index — preserve relative path depth */
-    var depth = window.location.pathname.split('/').filter(Boolean).length;
-    var back = '';
-    for (var i = 0; i < depth - 1; i++) back += '../';
-    window.location.replace(back + 'index.html');
+    /* Always exactly one level up from assignments/ to root */
+    window.location.replace('../index.html');
     return;
   }
 
-  /* ----- Index page: show gate ----- */
+  /* Index page: show gate, hide portfolio */
   document.addEventListener('DOMContentLoaded', function () {
-    var gate      = document.getElementById('gate');
-    var portfolio = document.getElementById('portfolio');
-    var input     = document.getElementById('gate-password');
-    var btn       = document.getElementById('gate-btn');
-    var errMsg    = document.getElementById('gate-error');
+    var gate    = document.getElementById('gate');
+    var input   = document.getElementById('gate-password');
+    var btn     = document.getElementById('gate-btn');
+    var errMsg  = document.getElementById('gate-error');
 
     if (gate) gate.style.display = 'flex';
-    if (portfolio) portfolio.style.display = 'none';
 
     function attempt() {
       var val = input ? input.value : '';
@@ -42,7 +36,7 @@
         if (errMsg) errMsg.textContent = 'Incorrect password';
         if (input) {
           input.classList.remove('shake');
-          void input.offsetWidth; /* reflow to restart animation */
+          void input.offsetWidth;
           input.classList.add('shake');
           setTimeout(function () { input.classList.remove('shake'); }, 500);
         }
@@ -53,7 +47,7 @@
     if (input) {
       input.addEventListener('keydown', function (e) {
         if (e.key === 'Enter') attempt();
-        if (errMsg) errMsg.textContent = '';
+        if (errMsg && e.key !== 'Enter') errMsg.textContent = '';
       });
     }
   });
