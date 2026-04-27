@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11 · Product Scorecard — Apple Books PM Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/auth.js"></script>
+</head>
+<body>
+
+<nav class="assignment-nav">
+  <a href="../index.html" class="nav-back">← Portfolio</a>
+  <span class="nav-title">Product Scorecard</span>
+  <span class="nav-num">11</span>
+</nav>
+
+<div class="assignment-body">
+
+  <header class="assignment-header">
+    <h1>Product Scorecard</h1>
+    <p class="desc">North Star metric and success framework for Book Clubs</p>
+    <div class="assignment-meta">
+      <span class="meta-item">Apple Books · iMessage Book Clubs</span>
+      <span class="meta-divider"></span>
+      <span class="meta-item">McCombs PM Course</span>
+      <span class="meta-divider"></span>
+      <span class="meta-item">Assignment 11</span>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <p>This scorecard evaluates the iMessage Book Clubs feature across four product health dimensions: Desirability, Usability, Adoptability, and Business Value. It is anchored to the North Star Metric: <strong>Weekly Active Club Readers</strong>.</p>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== PART 1 — NORTH STAR ===== -->
+    <h2>Part 1 — North Star Metric</h2>
+
+    <div class="north-star-card">
+      <div class="ns-label">North Star Metric</div>
+      <div class="ns-metric">Weekly Active Club Readers</div>
+      <div class="ns-definition">Users who both read at least 10 minutes AND send or react to a club message within the same 7-day window.</div>
+      <div class="ns-why"><strong>Why it matters:</strong> The dual condition keeps the metric honest — a user who only chats hasn't built a reading habit; a user who reads but never engages hasn't experienced the social accountability the feature is designed to create.</div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== PART 2 — SUPPORTING METRICS ===== -->
+    <h2>Part 2 — Supporting Metrics</h2>
+
+    <div class="metric-grid">
+      <div class="metric-card">
+        <span class="metric-icon">🏁</span>
+        <div class="metric-category">Activation</div>
+        <div class="metric-name">New Clubs Created / Week</div>
+        <p class="metric-desc">Tracks whether users discover and activate the feature. A club must exist before any engagement can happen.</p>
+      </div>
+      <div class="metric-card">
+        <span class="metric-icon">🤝</span>
+        <div class="metric-category">Acquisition</div>
+        <div class="metric-name">Invite Acceptance Rate</div>
+        <p class="metric-desc">% of iMessage club invitations accepted. Measures how well the feature converts existing social graphs into co-readers.</p>
+      </div>
+      <div class="metric-card">
+        <span class="metric-icon">📖</span>
+        <div class="metric-category">Reading Engagement</div>
+        <div class="metric-name">Avg. Reading Min / Member / Week</div>
+        <p class="metric-desc">Confirms the feature drives the core behavior — reading — not just chat. Ensures the social layer lifts reading, not replaces it.</p>
+      </div>
+      <div class="metric-card">
+        <span class="metric-icon">💬</span>
+        <div class="metric-category">Social Engagement</div>
+        <div class="metric-name">Discussions / Active Club / Week</div>
+        <p class="metric-desc">Messages, reactions, and polls sent per club. A proxy for how much the feature adds value beyond solo reading.</p>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== PART 3 — UX SCORECARD TABLE ===== -->
+    <h2>Part 3 — UX Health Scorecard</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th>Description</th>
+            <th>Current State</th>
+            <th>Target State</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Desirability</strong></td>
+            <td>Do users want this feature?</td>
+            <td>High — In-App Book Clubs ranked as Excitement/Delight in Kano analysis, top of satisfaction curve</td>
+            <td>Maintain excitement classification post-launch; track Kano re-surveys at 6 months</td>
+          </tr>
+          <tr>
+            <td><strong>Usability</strong></td>
+            <td>Can users complete the core flow without friction?</td>
+            <td>To be validated — prototype tested conceptually; no live usability data yet</td>
+            <td>&lt;3 taps to create a club; 0 support tickets for core flow in first 30 days</td>
+          </tr>
+          <tr>
+            <td><strong>Adoptability</strong></td>
+            <td>How easily can users discover and start using it?</td>
+            <td>Entry point identified (Home tab Book Clubs section); invite via iMessage reduces cold-start</td>
+            <td>Invite acceptance rate &gt;40%; 1,000 clubs created in beta week 1</td>
+          </tr>
+          <tr>
+            <td><strong>Business Value</strong></td>
+            <td>Does it support Apple's goals?</td>
+            <td>Feature directly addresses engagement, differentiation, and ecosystem stickiness goals from PRD</td>
+            <td>20% engagement lift; 10% book purchase uplift via club-driven social discovery</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== PART 4 — EARLY WARNING ===== -->
+    <h2>Part 4 — Early Warning System</h2>
+
+    <div class="callout-amber">
+      <h3>Early Warning System</h3>
+      <p>Each supporting metric (clubs created, invite acceptance rate, reading minutes per member, discussions per active club) feeds directly into Weekly Active Club Readers. A drop in any one of them surfaces in the NSM before it appears in revenue or churn data — giving the team time to act.</p>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    Chisara Duru &nbsp;·&nbsp; McCombs MBA &nbsp;·&nbsp; PM Portfolio &nbsp;·&nbsp; 2024
+  </footer>
+
+</div>
+
+</body>
+</html>

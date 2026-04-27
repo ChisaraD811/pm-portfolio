@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07 · PRD — Apple Books PM Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/auth.js"></script>
+</head>
+<body>
+
+<nav class="assignment-nav">
+  <a href="../index.html" class="nav-back">← Portfolio</a>
+  <span class="nav-title">PRD</span>
+  <span class="nav-num">07</span>
+</nav>
+
+<div class="assignment-body">
+
+  <header class="assignment-header">
+    <h1>PRD</h1>
+    <p class="desc">Full product requirements document for In-App Book Clubs</p>
+    <div class="assignment-meta">
+      <span class="meta-item">Apple Books · iMessage Book Clubs</span>
+      <span class="meta-divider"></span>
+      <span class="meta-item">McCombs PM Course</span>
+      <span class="meta-divider"></span>
+      <span class="meta-item">Assignment 07</span>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <p>This Product Requirements Document was created using ChatPRD and covers the full specification for Apple Books — In-App Book Clubs. It defines goals, user stories, functional requirements, UX, technical considerations, success metrics, and a phased delivery plan.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>TL;DR</h2>
+    <p>Apple Books — Book Clubs is a new native feature in the Apple Books app that enables users to create shared book club rooms around any title in their library. Friends and family can discuss the book asynchronously, track each other's reading progress, and react with comments, GIFs, and emojis — directly tied to specific passages or chapters — all within Apple Books itself.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>Goals</h2>
+
+    <h3>Business Goals</h3>
+    <ul>
+      <li>Increase Apple Books engagement by 20% among existing users within 6 months.</li>
+      <li>Differentiate Apple Books from Kindle/Audible through integrated social reading experiences.</li>
+      <li>Drive at least a 10% uplift in book purchases via social discovery and Book Clubs invitations.</li>
+      <li>Strengthen user attachment to the Apple ecosystem by making Apple Books a community destination.</li>
+    </ul>
+
+    <h3>User Goals</h3>
+    <ul>
+      <li>Let users enjoy book clubs inside Apple Books, without coordinating schedules or leaving the app.</li>
+      <li>Enable in-book sharing of reactions, insights, and questions about specific passages.</li>
+      <li>Allow visibility of friends' book progress as context for conversations — while protecting against spoilers.</li>
+      <li>Foster belonging and meaningful social connection through shared reading.</li>
+    </ul>
+
+    <h3>Non-Goals</h3>
+    <ul>
+      <li>No real-time, lock-step synchronized reading.</li>
+      <li>No video or audio calls within the feature.</li>
+      <li>No public or open communities; club participation is strictly by invite.</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>Personas &amp; User Stories</h2>
+
+    <h3>The Community-Oriented Reader (Primary)</h3>
+    <ul>
+      <li>As a community-oriented reader, I want to create a book club room in Apple Books for a favorite title, so I can reconnect with friends through a shared reading space.</li>
+      <li>As a community-oriented reader, I want to react to memorable passages with emojis or GIFs, so my friends see my responses right in the app and in context.</li>
+      <li>As a community-oriented reader, I want to track friends' progress in the book, so I know how to pace comments without revealing spoilers.</li>
+    </ul>
+
+    <h3>The Book Club Organizer</h3>
+    <ul>
+      <li>As an organizer, I want to invite friends by sending a share link (via iMessage, AirDrop, or email), so starting a club feels simple and fits Apple's sharing patterns.</li>
+      <li>As an organizer, I want to personalize my club with a custom name and image, so it feels like "our" space.</li>
+      <li>As an organizer, I want the ability to set gentle reading milestones, keeping everyone engaged at their own speed.</li>
+    </ul>
+
+    <h3>The Casual Participant</h3>
+    <ul>
+      <li>As a casual participant, I want to catch up on Book Club discussions whenever I wish inside Apple Books, so I never feel pressured or left behind.</li>
+      <li>As a casual participant, I want to add a quick emoji or GIF reaction on a chapter, making it easy to contribute even if I don't have time for long comments.</li>
+      <li>As a casual participant, I want to see which friends are ahead or behind, so I can avoid spoilers and take part at my own pace.</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>Functional Requirements</h2>
+    <ul>
+      <li><strong>Book Club Room Creation (Priority: High)</strong> — Create a room for any title directly from that book's page or from a new Book Clubs section. Invite contacts via share links sent through iMessage, AirDrop, or other channels. Customize group name and cover image.</li>
+      <li><strong>Reading Progress Tracking (Priority: High)</strong> — Visual indicators of each member's latest position (by chapter/page). Spoiler protection: blur or hide comments/reactions for content users haven't reached.</li>
+      <li><strong>Discussion Board (Priority: High)</strong> — Asynchronous threaded comments connected to specific chapters or passages. Ability to quote passages from Apple Books contextually in comments.</li>
+      <li><strong>Rich Reactions (Priority: Medium)</strong> — Emoji, GIF, and sticker reactions on comments and passages. Highlights can be made visible to other club members (with user opt-in/out).</li>
+      <li><strong>Notifications (Priority: Medium)</strong> — Smart nudges for new comments, milestone completions, or reactions (non-intrusive, with customizable notification preferences).</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>Success Metrics</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>User-Centric Metrics</th>
+            <th>Business Metrics</th>
+            <th>Technical Metrics</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Book Club rooms created per month</td>
+            <td>Book purchase conversion via club invites</td>
+            <td>Message delivery latency (&lt;250ms target)</td>
+          </tr>
+          <tr>
+            <td>Daily Active Users in Book Clubs</td>
+            <td>Increase in Apple Books MAU from Book Clubs</td>
+            <td>Club uptime/reliability (&gt;99.9% availability)</td>
+          </tr>
+          <tr>
+            <td>Avg. comments/reactions per book/group</td>
+            <td>Retention of Book Club participants</td>
+            <td>Error rates for sync/events (&lt;0.5% failure)</td>
+          </tr>
+          <tr>
+            <td>User satisfaction (in-app/post-club)</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <h2>Milestones &amp; Sequencing</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Phase</th>
+            <th>Timeline</th>
+            <th>Key Deliverables</th>
+            <th>Dependencies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Phase 1: Room Creation &amp; Progress</td>
+            <td>Weeks 1–2</td>
+            <td>Book Club setup, invitation flow, group dashboard, progress tracking</td>
+            <td>Apple Books API</td>
+          </tr>
+          <tr>
+            <td>Phase 2: Discussions &amp; Reactions</td>
+            <td>Week 3</td>
+            <td>Threaded chapter-linked comments, emoji/GIF reactions, passage quoting</td>
+            <td>Backend, GIF integrations</td>
+          </tr>
+          <tr>
+            <td>Phase 3: Spoiler &amp; Notifications</td>
+            <td>Week 4</td>
+            <td>Spoiler protection, opt-in progress sharing, notifications, polish &amp; QA</td>
+            <td>Analytics/tracking</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Team:</strong> 1 Product Manager, 2 Engineers (iOS, Backend/API), 1 Designer.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>Technical Considerations</h2>
+    <ul>
+      <li>Native UI and backend features built into the Apple Books app (not iMessage app extension).</li>
+      <li>Secure backend for discussion threads, reactions, progress, and group membership.</li>
+      <li>Integration with Apple Books APIs to access book metadata, user library, and passage linking.</li>
+      <li>End-to-end encryption for messages and reactions as per Apple privacy standards.</li>
+      <li>Full compliance with GDPR, CCPA, and Apple's privacy guidelines.</li>
+      <li>Designed for groups of 2–20 users; optimized for fast, reliable sync across iPhone, iPad, and Mac.</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>Narrative</h2>
+    <p>Chisara, a young professional, cherishes her old college book club but finds it difficult to coordinate with friends scattered across the country. With Apple Books — Book Clubs, she simply starts a book club room for their next novel right inside the Apple Books app. Club members' reading progress updates automatically — spoilers are protected, and comments stay hidden until everyone catches up. For Chisara and her friends, Book Clubs revives the warmth of their old gatherings, turning Apple Books into a true community space.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    Chisara Duru &nbsp;·&nbsp; McCombs MBA &nbsp;·&nbsp; PM Portfolio &nbsp;·&nbsp; 2024
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 · Prototype — Apple Books PM Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/auth.js"></script>
+</head>
+<body>
+
+<nav class="assignment-nav">
+  <a href="../index.html" class="nav-back">← Portfolio</a>
+  <span class="nav-title">Prototype</span>
+  <span class="nav-num">10</span>
+</nav>
+
+<div class="assignment-body">
+
+  <!-- ===== SECTION A ===== -->
+  <header class="assignment-header">
+    <h1>Prototype</h1>
+    <p class="desc">High-fidelity interactive prototype: iBooks in-app Book Clubs</p>
+    <div class="assignment-meta">
+      <span class="meta-item">Apple Books · iMessage Book Clubs</span>
+      <span class="meta-divider"></span>
+      <span class="meta-item">McCombs PM Course</span>
+      <span class="meta-divider"></span>
+      <span class="meta-item">Assignment 10</span>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <h2>Section A — The Prototype: High-Fidelity Screens</h2>
+
+    <p>A high-fidelity interactive prototype of the Apple Books 'Book Clubs' feature, built using Claude Code. The prototype demonstrates 5 key screens of the feature, designed to match Apple Books' native UI language — SF Pro fonts, Apple's grey/blue palette, pill-shaped buttons, and bottom tab navigation.</p>
+
+    <img
+      src="../assets/images/10a-prototype-screens-1.jpg"
+      alt="Prototype Screens 1-3"
+      style="width:100%; border-radius:8px; border:1px solid var(--border); margin-bottom:16px;"
+    >
+    <img
+      src="../assets/images/10a-prototype-screens-2.jpg"
+      alt="Prototype Screens 4-5"
+      style="width:100%; border-radius:8px; border:1px solid var(--border);"
+    >
+
+    <div class="screen-grid" style="margin-top:28px;">
+      <div class="screen-card">
+        <h4>Home (Modified)</h4>
+        <p>Existing Home tab with new "Book Clubs" section between Continue and Top Picks</p>
+      </div>
+      <div class="screen-card">
+        <h4>Book Club Hub</h4>
+        <p>Club detail showing reading progress bars, pinned discussion question, recent chat</p>
+      </div>
+      <div class="screen-card">
+        <h4>Create a Club</h4>
+        <p>Book selector, iMessage-style invite bubbles, reading pace picker</p>
+      </div>
+      <div class="screen-card">
+        <h4>In-Reader Chat Panel</h4>
+        <p>Reader view with slide-up chat drawer anchored to current passage</p>
+      </div>
+      <div class="screen-card" style="grid-column: 1 / -1;">
+        <h4>Passage Thread View</h4>
+        <p>Social annotation thread anchored to a highlighted excerpt</p>
+      </div>
+    </div>
+
+    <div class="tool-note">
+      Built with Claude Code (Anthropic) as a working HTML prototype. Screenshots taken from Chrome at mobile viewport (390px).
+    </div>
+
+    <!-- ===== SECTION DIVIDER ===== -->
+    <div class="section-block">
+
+      <h2>Section B — How I Built It: Prototype Process Document</h2>
+
+      <p>This document captures the product thinking behind the prototype — including the prompt engineering approach, the feature rationale, and the conversation with Claude that shaped the 5 screens.</p>
+
+      <div class="section-divider"></div>
+
+      <h3>The Feature Selected: iMessage Book Clubs (Feature 03)</h3>
+
+      <div class="story-card">
+        <p class="story-text">"When I want to read a book together with friends or family who are spread across different locations, I want to create a shared reading room directly inside iBooks, so I can enjoy the social experience of a book club without coordinating schedules or switching between multiple apps."</p>
+      </div>
+
+      <h3>Why This Feature?</h3>
+      <p>This was the natural choice from the JTBD stories because it directly addresses one of the three core opportunities identified in the Opportunity Solution Tree: reading feels passive and isolating with no community layer. The iMessage Book Clubs feature directly tackles this by turning a solitary habit into a shared one — without asking users to leave the Apple ecosystem.</p>
+
+      <h3>The 5 Screens — Design Rationale</h3>
+      <p>The screen selection was guided by a simple question: what is the shortest path that shows the full user journey? The answer: entry point (Home), social hub (Club Hub), onboarding (Create a Club), core interaction (In-Reader Chat), and the deepest engagement moment (Passage Thread). Together, these five screens tell the complete story of the feature.</p>
+
+      <h3>Tools Used</h3>
+      <p>Prototype built using Claude Code (Anthropic) as a working HTML/CSS prototype. Input: screenshots of the existing Apple Books interface + job stories + PRD. Output: single-file interactive prototype navigable between all 5 screens.</p>
+
+      <p><strong>Assignment requirements met:</strong> High-fidelity prototype. 5+ distinct screenshots. Tool documented.</p>
+
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    Chisara Duru &nbsp;·&nbsp; McCombs MBA &nbsp;·&nbsp; PM Portfolio &nbsp;·&nbsp; 2024
+  </footer>
+
+</div>
+
+</body>
+</html>
