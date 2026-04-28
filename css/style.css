@@ -228,6 +228,12 @@ body {
    TILE GRID - full width, square tiles, no gap
    ============================================================ */
 
+.grid-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -501,11 +507,11 @@ body {
 }
 
 .story-feature-label {
-  font-size: 11px;
-  font-weight: 700;
-  color: #0071E3;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1D1D1F;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.08em;
   margin-bottom: 10px;
 }
 
