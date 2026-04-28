@@ -3,33 +3,41 @@
 (function () {
   var PASSWORD = 'mccombsbestproductclass';
 
-  /* Detect if we're on an assignment page (path contains /assignments/) */
+  function isAuthed() {
+    return sessionStorage.getItem('auth') === 'granted' ||
+           localStorage.getItem('auth') === 'granted';
+  }
+
   var isAssignment = window.location.pathname.indexOf('/assignments/') !== -1;
 
-  if (sessionStorage.getItem('auth') === 'granted') {
-    if (!isAssignment) showPortfolio();
+  if (isAuthed()) {
+    /* Already authenticated */
+    if (!isAssignment) {
+      document.addEventListener('DOMContentLoaded', showPortfolio);
+    }
     return;
   }
 
   if (isAssignment) {
-    /* Always exactly one level up from assignments/ to root */
+    /* Not authed on an assignment page - go back to gate */
     window.location.replace('../index.html');
     return;
   }
 
-  /* Index page: show gate, hide portfolio */
+  /* Index page - show gate on load */
   document.addEventListener('DOMContentLoaded', function () {
-    var gate    = document.getElementById('gate');
-    var input   = document.getElementById('gate-password');
-    var btn     = document.getElementById('gate-btn');
-    var errMsg  = document.getElementById('gate-error');
+    var gate   = document.getElementById('gate');
+    var input  = document.getElementById('gate-password');
+    var btn    = document.getElementById('gate-btn');
+    var errMsg = document.getElementById('gate-error');
 
     if (gate) gate.style.display = 'flex';
 
     function attempt() {
-      var val = input ? input.value : '';
+      var val = input ? input.value.trim() : '';
       if (val === PASSWORD) {
         sessionStorage.setItem('auth', 'granted');
+        localStorage.setItem('auth', 'granted');
         if (gate) gate.style.display = 'none';
         showPortfolio();
       } else {
@@ -49,6 +57,7 @@
         if (e.key === 'Enter') attempt();
         if (errMsg && e.key !== 'Enter') errMsg.textContent = '';
       });
+      input.focus();
     }
   });
 

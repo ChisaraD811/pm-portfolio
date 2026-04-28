@@ -10,10 +10,9 @@
 <body>
 
 <!-- ==================== SPLIT-SCREEN GATE ==================== -->
-<div id="gate">
+<div id="gate" style="display:none;">
   <div class="gate-split">
 
-    <!-- Left: content + form -->
     <div class="gate-left">
       <div class="gate-left-inner">
         <h1 class="gate-name">Chisara<br>Duru</h1>
@@ -36,171 +35,140 @@
       </div>
     </div>
 
-    <!-- Right: prototype image stack -->
     <div class="gate-right">
-      <div class="gate-images">
-        <img
-          class="gate-img-1"
-          src="assets/images/10a-prototype-screens-1.jpg"
-          alt="Apple Books Book Clubs prototype screen 1"
-        >
-        <img
-          class="gate-img-2"
-          src="assets/images/10a-prototype-screens-2.jpg"
-          alt="Apple Books Book Clubs prototype screen 2"
-        >
-      </div>
+      <img
+        src="assets/images/10a-prototype-screens-1.jpg"
+        alt="Apple Books Book Clubs prototype"
+        class="gate-hero-img"
+      >
     </div>
 
   </div>
 </div>
 
 <!-- ==================== PORTFOLIO ==================== -->
-<div id="portfolio">
+<div id="portfolio" style="display:none;">
 
-  <header class="site-header">
-    <div class="header-left">
-      <div class="header-brand">
-        <span class="header-logo">📚</span>
-        <span class="header-app-name">Apple Books</span>
-        <span class="header-portfolio-label">&nbsp;PM Portfolio</span>
-      </div>
-      <div class="header-meta">Chisara Duru &nbsp;·&nbsp; McCombs MBA &nbsp;·&nbsp; Product Management</div>
-    </div>
-    <div>
-      <span class="feature-tag">iMessage Book Clubs Feature</span>
-    </div>
-  </header>
+  <!-- Minimal top nav -->
+  <nav class="portfolio-nav">
+    <img src="assets/images/apple-books-logo.png" alt="Apple Books" class="nav-logo-img">
+    <span class="nav-brand">Apple iBooks</span>
+  </nav>
 
+  <!-- Full-width tile grid -->
   <main class="grid">
 
     <!-- 01 -->
     <a href="assignments/01-business-model-canvas.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">01</span>
+      <span class="tile-num">01</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">Business Model Canvas</div>
       </div>
-      <div class="tile-name">Business Model Canvas</div>
-      <div class="tile-desc">Mapping Apple Books' key partners, activities, and revenue streams</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
     <!-- 02 -->
     <a href="assignments/02-value-proposition-canvas.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">02</span>
+      <span class="tile-num">02</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">Value Proposition Canvas</div>
       </div>
-      <div class="tile-name">Value Proposition Canvas</div>
-      <div class="tile-desc">Aligning product offerings to reader pains and gains</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
     <!-- 03 -->
     <a href="assignments/03-product-vision-board.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">03</span>
+      <span class="tile-num">03</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">Product Vision Board</div>
       </div>
-      <div class="tile-name">Product Vision Board</div>
-      <div class="tile-desc">Defining target group, needs, product, and business goals</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
     <!-- 04 -->
     <a href="assignments/04-opportunity-solution-tree.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">04</span>
+      <span class="tile-num">04</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">Opportunity Solution Tree</div>
       </div>
-      <div class="tile-name">Opportunity Solution Tree</div>
-      <div class="tile-desc">Connecting desired outcomes to solutions and experiments</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
-    <!-- 05 -->
+    <!-- 05 WIP -->
     <a href="assignments/05-customer-letter.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">05</span>
-        <span class="badge-wip">&#x1F6A7; In Progress</span>
+      <span class="tile-num">05</span>
+      <span class="badge-wip">In Progress</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">Customer Letter</div>
       </div>
-      <div class="tile-name">Customer Letter</div>
-      <div class="tile-desc">A letter from an Apple Books reader to the product team</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
     <!-- 06 -->
     <a href="assignments/06-jtbd-stories.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">06</span>
+      <span class="tile-num">06</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">JTBD Stories</div>
       </div>
-      <div class="tile-name">JTBD Stories</div>
-      <div class="tile-desc">Ten "when I... I want to... so I can..." job stories for Apple Books features</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
     <!-- 07 -->
     <a href="assignments/07-prd.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">07</span>
+      <span class="tile-num">07</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">PRD</div>
       </div>
-      <div class="tile-name">PRD</div>
-      <div class="tile-desc">Full product requirements document for In-App Book Clubs</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
     <!-- 08 -->
     <a href="assignments/08-kano-analysis.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">08</span>
+      <span class="tile-num">08</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">Kano Analysis</div>
       </div>
-      <div class="tile-name">Kano Analysis</div>
-      <div class="tile-desc">Plotting Apple Books features across satisfaction and implementation axes</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
     <!-- 09 -->
     <a href="assignments/09-roadmap.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">09</span>
+      <span class="tile-num">09</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">Roadmap</div>
       </div>
-      <div class="tile-name">Roadmap</div>
-      <div class="tile-desc">6-month feature roadmap with RICE prioritization and themes</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
     <!-- 10 -->
     <a href="assignments/10-prototype.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">10</span>
+      <span class="tile-num">10</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">Prototype</div>
       </div>
-      <div class="tile-name">Prototype</div>
-      <div class="tile-desc">High-fidelity interactive prototype: iBooks in-app Book Clubs</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
     <!-- 11 -->
     <a href="assignments/11-product-scorecard.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">11</span>
+      <span class="tile-num">11</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">Product Scorecard</div>
       </div>
-      <div class="tile-name">Product Scorecard</div>
-      <div class="tile-desc">North Star metric and success framework for Book Clubs</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
-    <!-- 12 -->
+    <!-- 12 WIP -->
     <a href="assignments/12-amazon-memo.html" class="tile">
-      <div class="tile-meta">
-        <span class="tile-num">12</span>
-        <span class="badge-wip">&#x1F6A7; In Progress</span>
+      <span class="tile-num">12</span>
+      <span class="badge-wip">In Progress</span>
+      <div class="tile-name-wrap">
+        <div class="tile-name">Amazon Memo</div>
       </div>
-      <div class="tile-name">Amazon Memo</div>
-      <div class="tile-desc">Working backwards from the customer - Amazon-style press release</div>
-      <div class="tile-arrow">&#8594;</div>
+      <span class="tile-arrow">&#8594;</span>
     </a>
 
   </main>
-
-  <footer class="site-footer">
-    Chisara Duru &nbsp;·&nbsp; McCombs MBA &nbsp;·&nbsp; PM Portfolio &nbsp;·&nbsp; 2026
-  </footer>
 
 </div><!-- /portfolio -->
 
